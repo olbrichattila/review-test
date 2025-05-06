@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code review Report</title>
+    <!-- Choose a theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css"
+    />
+    <style>
+        body {
+            background-color: #d9d9d9;
+            color: #222222;
+        }
+
+        h1 {
+            color: darkblue
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Code review Report</h1>
+    <pre>
+        <p>To learn more about MCP safety, see https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp-security.html</p>
+<p>/help all commands  •  ctrl + j new lines  •  ctrl + k fuzzy search
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+I'll explain the changes in this diff:</p>
+<p>The diff shows modifications to a PHP file named test.php. Here's what was changed:</p>
+<ol>
+<li>
+<p>Documentation update:
+• Added a new comment line in the class documentation header: &quot;I've done some
+changes to have review triggered&quot;</p>
+</li>
+<li>
+<p>Constant value change:
+• Changed MAX_VALUE constant from 100 to 200</p>
+</li>
+<li>
+<p>Property value change:
+• Changed the value of $protectedProperty from 1 to 2</p>
+</li>
+</ol>
+<p>These changes are relatively minor and include:
+• Adding documentation to indicate the purpose of the changes (triggering a code
+review)
+• Doubling the value of a class constant
+• Increasing a protected property's initial value</p>
+<p>The structure and functionality of the class remain the same, with only these specific
+value and documentation modifications.</p>
+
+    </pre>
+
+    <!-- Full Highlight.js with all languages -->
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/build/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

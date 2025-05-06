@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code review Report</title>
+    <!-- Choose a theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css"
+    />
+    <style>
+        body {
+            background-color: #d9d9d9;
+            color: #222222;
+        }
+
+        h1 {
+            color: darkblue
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Code review Report</h1>
+    <pre>
+        <p>To learn more about MCP safety, see https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-mcp-security.html</p>
+<p>/help all commands  •  ctrl + j new lines  •  ctrl + k fuzzy search
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This code is a PHP class called ExampleClass that's designed to demonstrate various
+PHP programming concepts and potential code issues for testing an automatic code
+review tool. Here's a breakdown of what it does:</p>
+<h2>Class Structure</h2>
+<p>• Defines a class with various property types (public, protected, private, static)
+• Includes a class constant MAX_VALUE set to 200
+• Has a constructor that initializes properties</p>
+<h2>Methods</h2>
+<p>The class contains several methods that demonstrate different programming concepts:</p>
+<ol>
+<li>simpleMethod: Takes a parameter and returns it multiplied by 2</li>
+<li>aVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongMethodName: Demonstrates an
+excessively long method name</li>
+<li>multiParamMethod: Shows how to handle multiple parameters of different types</li>
+<li>complexConditional: Contains complex conditional logic with multiple conditions</li>
+<li>methodWithLoop: Demonstrates a for loop that calculates the sum of numbers from 0
+to a limit</li>
+<li>methodWithSwitch: Shows a switch statement with an intentionally missing break
+statement</li>
+<li>methodWithTryCatch: Demonstrates exception handling</li>
+<li>methodWithUnusedVariable: Contains an unused variable to test if code review tools
+can detect it</li>
+<li>methodWithPossibleNullPointer: Demonstrates a potential null pointer issue</li>
+<li>demoClassFeatures: Shows how to use class constants and static methods</li>
+<li>getStaticProperty and setStaticProperty: Static methods for accessing a static
+property</li>
+<li>badPracticeErrorSuppression: Shows a better alternative to error suppression</li>
+<li>stringConcatenationInLoop: Demonstrates inefficient string concatenation in a loop</li>
+<li>methodWithoutReturnType: A method without a return type declaration</li>
+<li>returnsNull: A method that explicitly returns null</li>
+</ol>
+<h2>Example Usage</h2>
+<p>After the class definition, there's code that:</p>
+<ol>
+<li>Creates an instance of the class</li>
+<li>Calls various methods with different parameters</li>
+<li>Demonstrates static method usage</li>
+<li>Shows potential issues like null pointer errors</li>
+</ol>
+<h2>Intentional Issues</h2>
+<p>The code includes several intentional issues for code review tools to detect:
+• Excessively long method name
+• Missing break statement in a switch case
+• Unused variable
+• Potential null pointer dereference
+• Inefficient string concatenation in a loop
+• Missing return type declarations</p>
+<p>The code is well-documented with PHPDoc comments explaining the purpose of each method
+and property, making it clear that this is a test case for code review tools rather
+than production code.</p>
+
+    </pre>
+
+    <!-- Full Highlight.js with all languages -->
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/build/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
